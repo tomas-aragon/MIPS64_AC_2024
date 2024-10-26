@@ -15,6 +15,9 @@ F: .word 7
 
 ld $t0, F($zero)
 
+dadd $t1, $t0, $t1
+
+
 
 
 FOR: dmul $t0, $t0, $t1
