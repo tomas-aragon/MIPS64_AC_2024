@@ -21,7 +21,7 @@ FOR: dmul $t0, $t0, $t1
 
 daddi $t1, $t1, -1
 
-slt $t2, $t1, 2
+slti $t2, $t1, 2
 
 bnez $t2, FOR
 
