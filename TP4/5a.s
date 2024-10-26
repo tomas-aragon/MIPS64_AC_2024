@@ -22,6 +22,6 @@ sd $t0, P($zero)
 
 ld $t0, A($zero)
 dmul $t0, $t0, $t0
-daddi $t0, $t0, $t1
+dadd $t0, $t0, $t1
 sd $t0, D($zero); D = A^2 / B
 
