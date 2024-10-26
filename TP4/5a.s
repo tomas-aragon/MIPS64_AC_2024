@@ -15,13 +15,13 @@ dadd $t0, $t1, $t0
 sd $t0, S($zero); S = A + B
 
 ld $t0, A($zero)
-dmul $t0, $t0, $t1; t0 := t0 * t1
+dmul $t0, $t0, $t1
 daddi $t0, $t0, 2
-sd $t0, P($zero)
+sd $t0, P($zero); P = A * B + 2
 
 
 ld $t0, A($zero)
 dmul $t0, $t0, $t0
-dadd $t0, $t0, $t1
+ddiv $t0, $t0, $t1
 sd $t0, D($zero); D = A^2 / B
 
